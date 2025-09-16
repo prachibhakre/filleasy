@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FillEasy - Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>📄 My Resume Profile</h2>
+    <p>Save your details once, and reuse them for applications instantly.</p>
+
+    <!-- Profile Form -->
+    <form id="profileForm" class="form-box">
+      <h3>👤 Personal Info</h3>
+      <label class="form-label" for="name">Full Name *</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label class="form-label" for="email">Email *</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label class="form-label" for="phone">Phone *</label>
+      <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+      <label class="form-label" for="linkedin">LinkedIn</label>
+      <input type="text" id="linkedin" placeholder="LinkedIn profile URL">
+
+      <h3>📝 Profile Summary</h3>
+      <label class="form-label" for="summary">Summary</label>
+      <textarea id="summary" placeholder="Brief about yourself"></textarea>
+
+      <h3>🎓 Education</h3>
+      <label class="form-label" for="education">Education</label>
+      <textarea id="education" placeholder="Degree, University, Years"></textarea>
+
+      <h3>💡 Skills</h3>
+      <label class="form-label" for="skills">Skills</label>
+      <textarea id="skills" placeholder="e.g., Java, SQL, Web Dev"></textarea>
+
+      <h3>📂 Projects</h3>
+      <label class="form-label" for="projects">Projects</label>
+      <textarea id="projects" placeholder="Project title + description"></textarea>
+
+      <button type="submit">💾 Save Profile</button>
+    </form>
+
+    <!-- Saved Profiles -->
+    <h3>✅ Saved Profiles</h3>
+    <ul id="profileList"></ul>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

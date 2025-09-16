@@ -1,0 +1,59 @@
+/* Body */
+body {
+  width: 320px;
+  margin: 0;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: #ffffff; /* White background */
+  color: #007bff; /* Blue text for contrast */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Popup Container */
+.popup-container {
+  text-align: center;
+}
+
+/* Logo (rounded) */
+.popup-logo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff; /* optional blue border to make it stand out */
+}
+
+/* Heading */
+h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Description */
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.popup-btn {
+  display: block;
+  width: 100%;
+  background: #007bff; /* Blue buttons */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.popup-btn:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}

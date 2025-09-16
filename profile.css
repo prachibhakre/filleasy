@@ -1,0 +1,179 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f7fb;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+  text-align: center;
+  color: #0056d6;
+  margin-bottom: 5px;
+}
+
+p {
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.form-box {
+  background: #f9fbff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 25px;
+}
+
+.form-box h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #0040a8;
+  font-size: 16px;
+  font-weight: bold;
+  border-left: 4px solid #0056d6;
+  padding-left: 8px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border 0.2s, box-shadow 0.2s;
+  background: #fff;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0056d6;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0,86,214,0.3);
+}
+
+textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+/* Save Button */
+button {
+  background: #0056d6;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #003d99;
+}
+
+/* Saved Profiles List */
+#profileList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#profileList li {
+  background: #f9fbff;
+  margin: 10px 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0056d6;
+}
+
+/* Delete Button */
+.profile-buttons button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+.profile-buttons button:hover {
+  background: #d32f2f;
+}
+
+/* Toast Notification */
+.toast {
+  visibility: hidden;
+  min-width: 260px;
+  background-color: #0056d6;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+  input, textarea {
+    font-size: 13px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
